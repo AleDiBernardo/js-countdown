@@ -20,7 +20,7 @@ main {
   width: 800px;
   height: 800px;
   display: flex;
-  font-size: 15vh;
+  font-size: 20vh;
   color: white;
   font-weight: bold;
   justify-content: center;
@@ -93,6 +93,7 @@ main {
 @media screen and (max-width: 425px) {
     main {
         width: 95%;
+        font-size: 15vh;
     }
 
     .button-container > button {

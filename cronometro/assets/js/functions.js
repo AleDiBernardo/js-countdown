@@ -1,12 +1,13 @@
 function stopTime() {
   flag = true;
+  startCount = 0;
 }
 
 function resetTime() {
   flag = true;
   seconds = 0;
   minutes = 0;
-
+  startCount = 0;
   formatTime();
 }
 

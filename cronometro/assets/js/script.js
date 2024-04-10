@@ -13,7 +13,8 @@ const buttons = document.querySelectorAll("button");
 
 let seconds = 0,
   minutes = 0,
-  flag = false;
+  flag = false,
+  startCount = 0;
 
 //Added event listener to stop btn
 buttons[0].addEventListener("click", stopTime);
@@ -27,21 +28,22 @@ buttons[2].addEventListener("click", resetTime);
 function startTime() {
   flag = false;
 
-  let timer = setInterval(function () {
-
-    if (flag) {
-      clearInterval(timer);
-    } else {
-      if (seconds < 59) {
-        seconds++;
-        formatTime();
-
+  if (startCount === 0) {
+    let timer = setInterval(function () {
+      if (flag) {
+        clearInterval(timer);
       } else {
-        seconds = 0;
-        minutes++;
-        formatTime();
-
+        if (seconds < 59) {
+          seconds++;
+          formatTime();
+        } else {
+          seconds = 0;
+          minutes++;
+          formatTime();
+        }
       }
-    }
-  }, 1000);
+    }, 1000);
+  }
+  startCount++;
+
 }

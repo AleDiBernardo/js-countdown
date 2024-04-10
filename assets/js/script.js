@@ -3,7 +3,6 @@ let maxSec=60;
 const printResult = document.getElementById("print");
 
 const countdown = setInterval(function () {
-//   printResult.innerHTML = sec;
 
   if (sec > 49) {
     printResult.innerHTML = maxSec - sec;

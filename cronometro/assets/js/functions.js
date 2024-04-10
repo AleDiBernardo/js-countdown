@@ -3,15 +3,12 @@ function stopTime() {
 }
 
 function resetTime() {
-  console.log("reset");
 
   flag = true;
   seconds = 0;
   minutes = 0;
 
-
   formatTime();
-
 
 }
 

@@ -1,55 +1,90 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-    height: 100vh;
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-    width: 800px;
-    height: 800px;
-    display: flex;
-    font-size: 200px;
-    color: white;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  font-size: 200px;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .time-container {
-    display: flex;
+  display: flex;
 }
 
-.button-container > button{
-    font-size: 30px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}   
+.button-container > button {
+  font-size: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 #stop {
-    background-color: lightsalmon;
+  background-color: lightsalmon;
+
+  border-bottom: 3px solid lightcoral;
+  border-left: 3px solid lightcoral;
+  border-top: 1px solid lightcoral;
+  border-right: 1px solid lightcoral;
+}
+
+#stop:hover {
+  border-bottom: 1px solid lightcoral;
+  border-left: 1px solid lightcoral;
+  border-top: 3px solid lightcoral;
+  border-right: 3px solid lightcoral;
 }
 
 #start {
-    background-color: lightgreen;
+  background-color: lightgreen;
+
+  border-bottom: 3px solid greenyellow;
+  border-left: 3px solid greenyellow;
+  border-top: 1px solid greenyellow;
+  border-right: 1px solid greenyellow;
 }
 
+#start:hover {
+  border-bottom: 1px solid greenyellow;
+  border-left: 1px solid greenyellow;
+  border-top: 3px solid greenyellow;
+  border-right: 3px solid greenyellow;
+}
 #reset {
-    background-color: lightcoral;
+  background-color: lightcoral;
+
+  border-bottom: 3px solid red;
+  border-left: 3px solid red;
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+}
+
+#reset:hover {
+  border-bottom:1px solid red;
+  border-left:1px solid red;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
 }

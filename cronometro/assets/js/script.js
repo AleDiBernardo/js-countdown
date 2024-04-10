@@ -11,36 +11,36 @@ const secondElem = document.getElementById("second");
 const minuteElem = document.getElementById("minute");
 const buttons = document.querySelectorAll("button");
 
-let seconds = 57,
+let seconds = 0,
   minutes = 0,
   flag = false;
 
+//Added event listener to stop btn
 buttons[0].addEventListener("click", stopTime);
+
+//Added event listener to start btn
 buttons[1].addEventListener("click", startTime);
+
+//Added event listener to reset btn
 buttons[2].addEventListener("click", resetTime);
 
 function startTime() {
   flag = false;
 
   let timer = setInterval(function () {
+
     if (flag) {
       clearInterval(timer);
     } else {
       if (seconds < 59) {
-        console.log(seconds);
         seconds++;
-
         formatTime();
 
       } else {
         seconds = 0;
-        secondElem.innerHTML = 0;
         minutes++;
-
         formatTime();
 
-
-        console.log(minutes);
       }
     }
   }, 1000);

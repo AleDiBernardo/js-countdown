@@ -20,7 +20,7 @@ main {
   width: 800px;
   height: 800px;
   display: flex;
-  font-size: 200px;
+  font-size: 15vh;
   color: white;
   font-weight: bold;
   justify-content: center;
@@ -87,4 +87,16 @@ main {
   border-left:1px solid red;
   border-top: 3px solid red;
   border-right: 3px solid red;
+}
+
+
+@media screen and (max-width: 425px) {
+    main {
+        width: 95%;
+    }
+
+    .button-container > button {
+        font-size: 2.5vh;
+        
+      }
 }
